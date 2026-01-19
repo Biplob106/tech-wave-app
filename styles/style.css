@@ -313,6 +313,108 @@ hr{
 }
 /* choose container style end */
 
+.feature-container{
+    background-color: #1A0B2E;
+    height: 1276px;
+}
+.feature-episodes-container{
+    width: 75%;
+    margin: 0 auto;
+
+}
+.feature-episodes-container>h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 200px;
+}
+.epicode-card{
+    display: flex;
+    gap: 30px;
+}
+.epicode-card-info{
+    height: 440px;
+    width: 380px;
+    background-color:rgb(37,13,68);
+    border: none;
+    border-radius: 20px;
+}
+
+.card-content{
+    padding: 24px;
+   
+}
+.card-content>h2{
+    font-size: 24px;
+    margin-bottom: 12px;
+     color: white;
+}
+.card-content>p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+     color: white;
+}
+.card-time{
+    color: #00FF88;
+}
+
+iframe{
+    width: 380px;
+    height: 214px;
+}
+.host-container{
+    width: 75%;
+    margin: 0 auto;
+
+}
+.host-container>h2{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    color: white;
+}
+.host-profile{
+    background-color: rgb(37,13,68);
+    height: 280px;
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.host-content>h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+.host-content>p{
+    font: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    margin-bottom: 16px;
+}
+.icon{
+    display: flex;
+    gap: 8px;
+}
+.icon>img{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.host-profile{
+
+}
+
+
+
 
 
 
@@ -345,6 +447,24 @@ hr{
             "item5";
         gap: 15px;
     }
+    .feature-container{
+        height: auto;
+    }
+.epicode-card{
+    flex-direction: column;
+}
+
+.host-container{
+    width: 90%;
+}
+.host-profile{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+.icon{
+    justify-content: center;
+}
 
 
  
