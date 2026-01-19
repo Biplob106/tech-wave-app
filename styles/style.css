@@ -50,7 +50,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
-.nav-button{
+.nav-button , .btn{
     border: none;
     padding: 12.5px;
     font-size: 16px;
@@ -62,6 +62,259 @@ background-clip: text;
     font-size: 16px;
 }
 /* nav style end */
+/* hero styles start */
+.hero-container{
+    width: 100%;
+    height: 760px;
+    background-image: url("/assets/hero-bg.png");
+    background-position: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 101px;
+}
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-heading>h1{
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+.hero-heading>p{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: auto;
+    margin-bottom: 20px;
+}
+.hero-btn{
+    padding: 12px;
+    background-color: transparent;
+   
+    border: 2px solid green ;
+    border-radius: 10px;
+    color: green;
+}
+.hero-circle{
+    position: relative;
+    z-index: 1;
+
+ 
+}
+.mic{
+    position: absolute;
+    z-index: 2;
+    left: 35%;
+    top: 25%;
+}
+.batch{
+    position: absolute;
+    padding: 8px;
+    font-size: 18px;
+    background-color:#00FF88;
+    border: none;
+    border-radius: 20px;
+    z-index: 3;
+    top: 20px;
+    right: 20px
+}
+/* hero style end */
+
+/* about styles start */
+.about-conatiner{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(26,11,46);
+    
+}
+.about-heading{
+    width: 75%;
+    text-align: center;
+    margin-top: 40px;
+}
+.about-card{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+.about-heading>h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    gap: 16px;
+}
+.about-heading>p{
+    font-size: 16px;
+  line-height: 40px;
+    color: #FFFFFF;
+}
+hr{
+    color: white;
+    width: 75%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-card-info>h2{
+    font-size: 48px;
+    color: #00FF88;
+    margin-bottom: 16px;
+
+}
+.about-card-info>p{
+    font-size: 16px;
+    color: white;
+}
+
+/* about styles end */
+/* choose container style start */
+#choose-container{
+    background-color: #230E3D;
+    padding: 80px 0;   /* fixed height বাদ */
+}
+
+.choose-section{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.choose-heading>h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.choose-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 273px);
+    gap: 30px;
+
+    /* Grid areas define */
+    grid-template-areas:
+        "item1 item2 item2"
+        "item1 item3 item3"
+        "item4 item4 item5";
+}
+
+/* Assign areas to items */
+.grid-item:nth-child(1){ grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.grid-item:nth-child(1)>h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.grid-item:nth-child(1)>p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 16px;
+}
+.grid-item:nth-child(2){ grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.grid-item:nth-child(2)>h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.grid-item:nth-child(2)>p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 16px;
+}
+
+.grid-item:nth-child(3){ grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.grid-item:nth-child(3)>h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.grid-item:nth-child(3)>p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 16px;
+}
+.grid-item:nth-child(4){ grid-area: item4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.grid-item:nth-child(4)>h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.grid-item:nth-child(4)>p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 16px;
+}
+.grid-item:nth-child(5){ grid-area: item5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.grid-item:nth-child(5)>h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.grid-item:nth-child(5)>p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 16px;
+}
+
+
+
+/* Style for items */
+.grid-item{
+    background: #412567;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+/* choose container style end */
+
+
+
 
 /* Responsive design start */
 @media screen and (max-width : 575px){
@@ -72,4 +325,27 @@ background-clip: text;
     .responsive-nav{
         display: block;
     }
+    .choose-section{
+        width: 90%;
+    }
+    .about-card{
+        gap: 40px;
+        
+        flex-wrap: wrap;
+    }
+    .choose-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5";
+        gap: 15px;
+    }
+
+
+ 
 }
